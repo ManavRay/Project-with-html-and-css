@@ -1,0 +1,26 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    background: powderblue;
+}
+:root {
+    --background-color: white;
+    --circle: #BC022C;
+    --height: 300px;
+}
+.flag {
+    height: var(--height);
+    width: calc(var(--height) * 3/2);
+    background: var(--background-color);
+    margin: 150px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.circle {
+    background: var(--circle) ;
+    border-radius: 50%;
+    width: var(--height);
+    height: calc(var(--height) * 3/5);
+    width: calc(var(--height) * 3/5);
+}

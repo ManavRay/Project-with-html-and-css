@@ -1,0 +1,25 @@
+:root {
+    --spoiler-color: #000;
+  }
+  
+  p {
+    line-height: 1.5em;
+  } 
+  
+  .para {
+    background: #e8eaed;
+    padding: 1em;
+    border-radius: 1em;
+    margin-bottom: 3em;
+  }
+  
+  .black {
+    background: var(--spoiler-color);
+    color: var(--spoiler-color);
+    transition: all .5s ease-in;
+  }
+  
+  .black:hover {
+    background: initial;
+    color: initial;
+  }

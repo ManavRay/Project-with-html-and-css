@@ -1,0 +1,36 @@
+:root {
+    --bg-word: #5134ff;
+}
+html, body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, blue,violet, white);
+}
+.container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+}
+h1:after {
+    content: "";
+    animation: swap infinite 3s;
+    background: var(--bg-word);
+    color: white;
+    border-radius: 4px;
+    margin-left: 4px;
+}
+@keyframes swap {
+    0%{
+        content: "me";
+
+    }
+    50%{
+        content: "my";
+    }
+    100%{
+        content: "myself !";
+    }
+    
+}

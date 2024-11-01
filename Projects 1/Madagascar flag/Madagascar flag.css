@@ -1,0 +1,32 @@
+:root {
+    --white: #ffffff;
+    --red: #f9423a;
+    --green: #00843d;
+    --height: 300px;
+}
+html, body {
+    margin: 0;
+    padding: 0;
+    background: blue;
+}
+.flag {
+    height: var(--height);
+    width: calc(var(--height) * 1.5);
+    margin: 5em auto;
+    display: flex;
+}
+.white {
+    background: var(--white) ;
+    width: calc(var(--height) / 2);
+
+}
+.red {
+    background: var(--red);
+    height: 50%;
+    width: var(--height);
+}
+.green {
+    background: var(--green);
+    height: 50%;
+    
+}

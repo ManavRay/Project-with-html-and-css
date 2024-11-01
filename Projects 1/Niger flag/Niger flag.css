@@ -1,0 +1,39 @@
+.html, .body{
+    margin: 0;
+    padding: 0;
+    background: orchid;
+}
+:root {
+    --saffron: #e05206;
+    --white: #fff;
+    --green: #0db02b;
+    --height: 250px;
+}
+.flag {
+    height: var(--height);
+    width: calc(var(--height) * 7/6);
+    /*background: black;*/
+    margin: 250px auto;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+.red{
+    background: var(--saffron);
+}
+.white {
+    background: var(--white);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.green {
+    background: var(--green);
+}
+.circle {
+    background: var(--saffron);
+    border-radius: 50%;
+    height: calc(var(--height)/3*.85);
+    width: calc(var(--height)/3*.85);
+    position: absolute;
+}

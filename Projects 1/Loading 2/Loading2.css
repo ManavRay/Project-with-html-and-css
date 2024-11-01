@@ -1,0 +1,39 @@
+:root {
+    --one-square: red;
+    --two-square: orange;
+    --three-square: blue;
+}
+html, body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(90deg, #e9692c, #ed8756, #f2a580, #f6c3ab, #fbead5);
+}
+.container {
+    height: 100vh;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+.square {
+    height: 2.5em;
+    width: 2.5em;
+    margin: 1.5em;
+    animation: rotate infinite ease-in-out 1.5s;
+}
+.square1 {
+    background: var(--one-square);
+}
+.square2 {
+    background: var(--two-square);
+}
+.square3 {
+    background: var(--three-square);
+}
+@keyframes rotate {
+    from {
+        transform: rotate(-45deg) ;
+    }
+    to {
+        transform: rotate(45deg) ;
+    }
+}

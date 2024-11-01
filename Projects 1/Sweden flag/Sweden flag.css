@@ -1,0 +1,32 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+:root {
+    --blue: #0269A6;
+    --yellow: #FECC00;
+    --flag-height: 250px;
+}
+.flag {
+    background: var(--blue);
+    height: var(--flag-height);
+    width: calc(var(--flag-height) * 8/5);
+    margin: 250px auto;
+    display: flex;
+    position: relative;
+}
+.strip {
+    background: var(--yellow);
+    height: calc(var(--flag-height) * 1/5);
+}
+.cross1 {
+    align-self: center;
+    width: 100%;
+}
+.cross2 {
+    width: var(--flag-height);
+    position: absolute;
+    transform: rotate(90deg);
+    top: calc(var(--flag-height)* 4/10);
+    left: calc(var(--flag-width) * 5/16);
+}

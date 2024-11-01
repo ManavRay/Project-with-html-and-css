@@ -1,0 +1,54 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(to right, #f29a2e, #e75a0a, #a53d08);
+}
+:root {
+    --jeopardy-blue: #060ce9;
+    --font-color-main: #fff;
+}
+.card {
+    height: 400px;
+    width: 350px;
+    background: linear-gradient(45deg, #39df37, #bd9fd1, #ffb881);
+    color: var(--font-color-main);
+    padding: 2em;
+    margin: 2em;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    text-transform: uppercase;
+    transition: transform .6s;
+    transform-style: preserve-3d;
+}
+h2 {
+    font-size: 50px;
+}
+p {
+    font-size: 25px;
+}
+.card:hover {
+    transform: rotateY(180deg);
+}
+.card-back {
+    display: none;
+}
+.card:hover .card-front {
+    display: none;
+}
+.card:hover .card-back {
+    display: block;
+    transform: rotateY(180deg);
+}
+.card-front, .card-back {
+    backface-visibility: hidden;
+}
+img {
+    height: 350px;
+    width: 350px;
+    border-radius: 10px 20px 0px 10px;
+}
